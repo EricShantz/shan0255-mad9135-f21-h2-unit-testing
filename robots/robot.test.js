@@ -16,17 +16,29 @@ describe('Robot module', () => {
     // BUILD YOUR TESTS HERE
     
     // 1. Test that result is an array.
+    test ("the result should be an array", ()=>{
+        expect(result).toEqual(expect.arrayContaining(result))
+        console.log(result)
+    })
 
 
     // 2. Test that result[1] is of type object.
 
+    test ("the second element of result should be a report object", ()=>{ //what is a report object??
+        expect(result[1]).toHaveProperty('action')
+    })
 
     describe('Validate report values', () => {
         // Create this variable after checking that type is object.
         const report = result[1]; 
 
         // 3. Test that report contains the properties: action, x, y, and facing.
-
+        test ("report should contain the properties: action, x, y, and facing", ()=>{ //what is a report object??
+            expect(result[1]).toHaveProperty('action' , 'x' , 'y' , 'facing')
+            // expect(result[1]).toHaveProperty('x')
+            // expect(result[1]).toHaveProperty('y')
+            // expect(result[1]).toHaveProperty('facing')
+        })
 
         // 4. Test that report.x is a number between 0 and 5.
 

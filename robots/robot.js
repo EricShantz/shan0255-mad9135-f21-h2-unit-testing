@@ -1,4 +1,4 @@
-let Robot = function() {
+	let Robot = function() {
 	this.x = 0;
 	this.y = 0;
 	this.cardinals = ["NORTH", "EAST", "SOUTH", "WEST"];
