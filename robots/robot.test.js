@@ -49,8 +49,6 @@ describe('Robot module', () => {
             expect(report.y).toBeLessThanOrEqual(5)
         })
 
-
-
         // 6. Test that report.facing is one of: NORTH, SOUTH, EAST, or WEST.
         test("Report.facing is one of: NORTH, SOUTH, EAST, WEST" , ()=>{
             expect(report.facing).toContain("NORTH" , "SOUTH" , "EAST" , 'WEST')
