@@ -18,7 +18,6 @@ describe('Robot module', () => {
     // 1. Test that result is an array.
     test ("the result should be an array", ()=>{
         expect(result).toEqual(expect.arrayContaining(result))
-        console.log(result)
     })
 
 
